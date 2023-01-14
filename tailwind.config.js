@@ -14,6 +14,7 @@ module.exports = {
         main: '#5f27cd',
         text: '#323232',
         banner:'#576574',
+        secondary:'#feca57',
       },
       screens: {
         '2xl': '1120px'
