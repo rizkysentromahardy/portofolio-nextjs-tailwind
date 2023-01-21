@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        {/* <section id=''>
+        <section id=''>
           <div className='container'>
             <div className='flex justify-around'>
               <div className='text-base font-semibold px-4 py-8 space-x-40'>
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {children}
 

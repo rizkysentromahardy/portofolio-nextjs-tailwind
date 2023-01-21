@@ -2,6 +2,7 @@ import { Inter } from '@next/font/google'
 import Image from 'next/image'
 import profil from './assets/img/profile.png'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -30,33 +31,55 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='about'>
+      <section id='about ' className='pt-10' >
         <div className='flex flex-wrap'>
-          <div className='bg-banner self-center w-full h-auto text-white text-center pt-10 pb-10 px-6'>
-            <h1 className='text-center text-2xl font-bold'>About Me</h1>
-            <p className='pt-10 text-center'>
-              I'm an enthusiastic UI UX Designer with 1 year experience.Skills in creating user interfaces, system design, prototyping, user research.<br></br> I use design thinking to help with product development and focus on user needs as well as being interested in technology developments</p>
+          <div className='bg-banner self-center w-full h-auto text-white text-center space-y-10 py-10'>
+            <h1 className='label'>About Me</h1>
+            <p className='m-6 text-center text-lg leading-relaxed'>
+              I'm an enthusiastic UI UX Designer with 1 year experience. Skills in creating user interfaces, system design, prototyping, user research.<br></br> I use design thinking to help with product development and focus on user needs as well as being interested in technology developments</p>
             <div className='flex flex-row justify-center'>
-              <div className='m-3 lg:m-6 flex flex-row pl-2'>
-                <h1 className='text-4xl font-bold pl-2 text-secondary pr-2 text- m-2'>1 +</h1>
-                <div className='flex-col m-1 text-left'>
-                  <p className='text-base font-thin'>Work</p>
-                  <p className='text-base font-thin'>Experiance</p>
+              <div className='m-3 lg:m-6 flex flex-row space-x-4'>
+                <h1 className='flex justify-center text-xl lg:text-4xl font-bold text-secondary m-2'>1+</h1>
+                <div className='flex-col text-left'>
+                  <div className='text-base m-1 font-base'>
+                  <p>Work</p>
+                  <p>Experiance</p>
+                  </div>
                 </div>
               </div>
-              <div className='m-3 lg:m-6 flex flex-row pl-2'>
-                <h1 className='text-4xl font-bold pl-2 text-secondary pr-2 text- m-2'>3 +</h1>
+              <div className='m-3 lg:m-6 flex flex-row space-x-4'>
+                <h1 className='flex justify-center text-xl md:text-4xl font-bold text-secondary m-2'>3+</h1>
                 <div className='flex-col m-1 text-left'>
-                  <p className='text-base font-thin'>Project</p>
-                  <p className='text-base font-thin'>Freelance </p>
+                  <div className='text-base font-base'>
+                  <p>Project</p>
+                  <p>Freelance </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <h1 className='pt-10 text-2xl font-bold'> Client Freelance</h1>
-            <div className='flex flex-row justify-center space-x-8'>
-              <div className='max-w-xl rounded overflow-hidden shadow-lg bg-main px-4 py-2'>p</div>
-              <div className='bg-main'>p</div>
-              <div className='bg-main'>p</div>
+            <h1 className='label'> Client Freelance</h1>
+            <div className='card'>
+              <div className='card-body'>
+                  <div className='card-content'>
+                    <Image src={profil} className='w-16 h-16 '></Image>
+                  </div>
+                  <p className='text-center m-6'>
+                    So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I </p>
+              </div>
+              <div className='card-body'>
+                  <div className='card-content'>
+                    <Image src={profil} className='w-16 h-16 '></Image>
+                  </div>
+                  <p className='text-center m-6'>
+                    So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I </p>
+              </div>
+              <div className='card-body'>
+                  <div className='card-content'>
+                    <Image src={profil} className='w-16 h-16 '></Image>
+                  </div>
+                  <p className='text-center m-6'>
+                    So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I </p>
+              </div>
             </div>
           </div>
         </div>
